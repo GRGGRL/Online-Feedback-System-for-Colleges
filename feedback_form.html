@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Thiruthangal Nadar College - Seviyal Chennai</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="fade-in">
+    <header style="text-align:center; padding:20px;">
+        <h1>Thiruthangal Nadar College</h1>
+        <p>Seviyal Chennai</p>
+    </header>
+  
+  <div class="college-heading fade-in">
+  <h3>Feedback to Students in College</h3>
+</div>
+  
+  <div class="form-container">
+  <h2>Submit Feedback</h2>
+<form id="feedbackForm">
+  <input type="text" name="subject" placeholder="Subject" required><br>
+  <input type="number" name="rating" min="1" max="5" placeholder="Rating (1–5)" required><br>
+  <textarea name="comments" placeholder="Your Comments" rows="4"></textarea><br>
+  <input type="submit" value="Submit Feedback">
+</form>
+
+<script>
+  document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default form submission behavior
+
+    // Optional: You can collect form data here if needed
+
+    // Redirect to thankyou.html
+    window.location.href = "thankyou.html";
+  });
+</script>
+  <br><div class="section" style="background: ;">
+  <strong>🧩 Tips for giving meaningful feedback:</strong>
+  <ul>
+    <li>Be clear and specific about your experience</li>
+    <li>Mention what worked well and what could improve</li>
+    <li>Constructive suggestions are more helpful than complaints</li>
+    <li>All ratings should reflect your honest opinion</li>
+  </ul>
+</div>
+  
+  <br><div class="section">
+  <h3>📝 Why Your Feedback Matters</h3>
+  <p>
+    We value your honest opinion! Your feedback helps us improve our teaching methods,
+    facilities, and student experience. Whether it's about classes, faculty, labs, or placements—
+    we want to hear from you.
+  </p>
+  <p>
+    Please be thoughtful and respectful. Your responses will remain confidential and will
+    be reviewed by our academic improvement team.
+  </p>
+</div>
+</body>
+</html>
